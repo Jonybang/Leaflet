@@ -84,6 +84,7 @@ export var Keyboard = Handler.extend({
 
 		this._map._container.focus();
 
+//		https://github.com/Leaflet/Leaflet/issues/1228
 // 		window.scrollTo(left, top);
 	},
 
