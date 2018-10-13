@@ -84,8 +84,7 @@ export var Keyboard = Handler.extend({
 
 		this._map._container.focus();
 
-//		https://github.com/Leaflet/Leaflet/issues/1228
-// 		window.scrollTo(left, top);
+ 		window.scrollTo(left, top);
 	},
 
 	_onFocus: function () {
@@ -176,4 +175,5 @@ export var Keyboard = Handler.extend({
 // @section Handlers
 // @property keyboard: Handler
 // Keyboard navigation handler.
-Map.addInitHook('addHandler', 'keyboard', Keyboard);
+// https://github.com/Leaflet/Leaflet/issues/5392
+//Map.addInitHook('addHandler', 'keyboard', Keyboard);
